@@ -6,21 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (header) {
         if (window.scrollY > 50) {
           header.style.backgroundColor = '#000'; // Set header background color on scroll
-        } 
-      }
-    });
-  
-    // Smooth scroll for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetElement = document.querySelector(this.getAttribute('href'));
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth'
-          });
+        } else {
+          header.style.backgroundColor = 'transparent'; // Reset background color when scrolling back up
         }
-      });
+      }
     });
   
     // Typing effect for changing text
