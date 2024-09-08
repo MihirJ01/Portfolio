@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More About Me | Mihir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Embedded CSS -->
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #111;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+    }
+
+    .nav-links li {
+      margin-left: 30px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .nav-links a:hover::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-links .active {
+      color: #ff6347;
+    }
+
+    /* Header Section */
+    .about-header {
+      background: url('header-bg.jpg') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .about-header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* About Main Content */
+    .about-main {
+      padding: 50px 0;
+    }
+
+    .about-section {
+      margin-bottom: 60px;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      color: #111;
+      margin-bottom: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .about-section h2::after {
+      content: '';
+      width: 50px;
+      height: 4px;
+      background-color: red;
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    .timeline, .skills-grid, .hobbies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .timeline-item, .skill-card, .hobby-card {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-item:hover, .skill-card:hover, .hobby-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .timeline h3, .skill-card h3, .hobby-card h3 {
+      font-size: 22px;
+      color: #ff6347;
+      margin-bottom: 10px;
+    }
+
+    .timeline-date {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .hobbies {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Mihir</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-me.html" class="active">More About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="about-header">
+    <div class="container">
+      <h1>More About Me</h1>
+      <p>Dive into my skills, education, and experiences.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="about-main">
+    <div class="container">
+      <!-- Education Section -->
+      <section class="about-section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Bachelors in Computer Science</h3>
+            <span class="timeline-date">2021 - 2025</span>
+            <p>CKT University, Mumbai City</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Game Development Course</h3>
+            <span class="timeline-date">2025-2026</span>
+            <p>Deciding</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="about-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Proficient in building responsive layouts with clean and maintainable code.</p>
+          </div>
+          <div class="skill-card">
+            <h3>C#</h3>
+            <p>Skilled in modern C# which helps me to create responsive games.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Unity Engine</h3>
+            <p>Experienced in Unity Engine game development .</p>
+          </div>
+          <div class="skill-card">
+            <h3>Game Artisting</h3>
+            <p>Developed Many game assets with best designs and concepts.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="about-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Full Stack Developer</h3>
+            <span class="timeline-date">2023 - Present</span>
+            <p>XYZ Tech Company</p>
+            <p>Worked on developing dynamic web applications and improving frontend and backend architectures.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Frontend Intern</h3>
+            <span class="timeline-date">2022 - 2023</span>
+            <p>ABC Digital Agency</p>
+            <p>Designed and developed responsive user interfaces for multiple clients.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hobbies and Interests Section -->
+      <section class="about-section">
+        <h2>Hobbies & Interests</h2>
+        <div class="hobbies">
+          <div class="hobby-card">
+            <h3>Traveling</h3>
+            <p>Exploring new cultures and places helps me get inspired for my work.</p>
+          </div>
+          <div class="hobby-card">
+            <h3>Painting</h3>
+            <p>I enjoy painting,sketching which helps to relax my mind.</p>
+          </div>
+          <div class="hobby-card">
+            <h3>Open Source</h3>
+            <p>Contributing to open-source projects allows me to collaborate with developers worldwide.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mihir. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
