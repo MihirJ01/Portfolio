@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (header) {
         if (window.scrollY > 50) {
           header.style.backgroundColor = '#000'; // Set header background color on scroll
-        } else {
-          header.style.backgroundColor = 'transparent'; // Reset background color when scrolling back up
-        }
+        } 
       }
     });
   
